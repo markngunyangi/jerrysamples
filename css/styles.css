@@ -1,0 +1,289 @@
+@import url('https://fonts.googleapis.com/css?family=Nunito:300,400,600&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Work+Sans:300,400,500,600&display=swap');
+@import url('../fontawesome-free-5.12.1-web/css/all.min.css');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Work Sans', sans-serif;
+    /* font-family: 'Nunito', sans-serif; */
+}
+
+body {
+    background: #F8F6F6;
+}
+
+h1 {
+    font-size: 3rem;
+}
+
+h2 {
+    font-size: 2rem;
+}
+
+h3 {
+    font-size: 1rem;
+}
+
+a {
+    text-decoration: none;
+}
+
+i.im {
+    font-size: 16px;
+}
+
+.wrapper {
+    position: relative;
+}
+
+.samples-header {
+    background: #000046;
+    /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #1CB5E0, #000046);
+    /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #1CB5E0, #000046);
+    /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+
+.samples-header__illustration {
+    width: 100%;
+    margin: auto;
+    background: rgba(0, 0, 0, 0.4);
+}
+
+.samples-header__illustration-title {
+    background-image: url("../assets/eastwood-page-under-construction.png");
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+    padding: 1px;
+    width: fit-content;
+    margin: auto;
+}
+
+.samples-header__illustration-title h1 {
+    color: #efffff;
+    margin: 12rem auto;
+    text-align: center;
+}
+
+.samples-title{
+    width: 80%;
+    padding: .5rem;
+    margin: auto;
+}
+
+.samples-title i{
+    color: #000046;
+}
+
+.samples-title__text{
+    padding: .5rem;
+}
+
+.samples-content {
+    padding: .5rem;
+}
+
+.samples-content__info {
+    display: flex;
+    flex-direction: column;
+    transition: all .5s ease;
+    width: 80%;
+    border-top: 1px solid #E9E9E9;
+    border-bottom: 1px solid #E9E9E9;
+    padding: .5rem;
+    margin: .5rem auto;
+}
+
+.samples-content__info:hover {
+    border: 1px solid #E9E9E9;
+    border-radius: 5px;
+}
+
+.samples-content__info-container {
+    padding: .5rem;
+    display: flex;
+}
+
+@media screen and (max-width: 760px) {
+    .samples-content__info-container {
+        flex-direction: column-reverse;
+    }
+}
+
+.samples-content__info-text {
+    padding: .5rem;
+    width: 85%;
+}
+
+.samples-content__info-image {
+    padding: .5rem;
+    width: 15%;
+    display: flex;
+    justify-content: center;
+}
+
+@media screen and (max-width: 760px) {
+    .samples-content__info-image {
+        justify-content: left;
+    }
+}
+
+.samples-content__info-image img {
+    border: 1px solid #E9E9E9;
+    width: 80%;
+}
+
+.anchor {
+    padding: 1rem;
+}
+
+.anchor a {
+    color: #000046;
+    cursor: pointer;
+    display: inline;
+    margin: 1rem;
+}
+
+@media screen and (max-width: 760px) {
+    .samples-content__info-text {
+        width: 100%;
+    }
+
+    .samples-content__info-image {
+        width: 100%;
+    }
+}
+
+/* testimonials */
+.testi-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: auto;
+    width: 90%;
+    margin: auto;
+    border-radius: 10px;
+}
+
+.testi {
+    display: flex;
+    flex-direction: column;
+}
+
+.testi .client {
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+    position: relative;
+}
+
+.testi .client .say .border {
+    width: 100%;
+    height: 4px;
+    background: #000046;
+    /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #1CB5E0, #000046);
+    /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #1CB5E0, #000046);
+    /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    margin-top: 2rem;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 999;
+    transition: all 600ms cubic-bezier(1, -0.32, 0, 0.92);
+}
+
+.testi .client .say p {
+    margin: 60px 0;
+    font-size: 18px;
+    line-height: 1.5;
+    transition: all 550ms cubic-bezier(1, 0.1, 0, 1.04);
+}
+
+/* When add class show display the h3 element */
+.testi .client .profile {
+    background: #1d1c1d;
+    display: flex;
+    height: 100px;
+    justify-content: center;
+    align-items: center;
+    transition: all 250ms;
+    cursor: pointer;
+}
+
+.testi .client .profile:hover {
+    background: #1d1c1d;
+}
+
+.testi .client .profile .info h3 {
+    color: #F8F6F6;
+}
+
+.testi .client .profile .img {
+    width: 40px;
+    height: 40px;
+    margin-right: 15px;
+}
+
+.testi .client .profile .img img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 100%;
+}
+
+.testi .client .profile .info {
+    font-size: 12px;
+}
+
+.testi .client .profile .info small {
+    color: #bdbdbd;
+}
+
+@media screen and (min-width: 768px) {
+    .testi {
+        flex-direction: row;
+        padding: 1.5rem;
+    }
+
+    .testi .client .say p {
+        transform: translateY(-300px);
+    }
+
+    .testi .client.show .say p {
+        transform: translateY(0);
+    }
+
+    .testi .client .say .border {
+        width: 0%;
+    }
+
+    .testi .client.show .say .border {
+        width: 100%;
+    }
+
+    .testi .client .profile {
+        background: #fff;
+    }
+
+    .testi .client:hover .profile {
+        background: #1d1c1d;
+    }
+
+    .testi .client .profile .info h3 {
+        color: #1d1c1d;
+    }
+
+    .testi .client:hover .profile .info h3 {
+        color: #F8F6F6;
+    }
+
+    .testi .client:nth-child(2) {
+        margin: 0 25px;
+    }
+}
