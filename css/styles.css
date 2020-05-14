@@ -252,7 +252,7 @@ i.im {
     }
 
     .testi .client .say p {
-        transform: translateY(-300px);
+        transform: translateY(-500px);
     }
 
     .testi .client.show .say p {
